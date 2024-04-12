@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254951623867",
+    "project_id": "paula-project-1f6b6",
+    "storage_bucket": "paula-project-1f6b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254951623867:android:7a0bc5490a39b4f345ad9e",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationmad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNR5UAfn6x5FoC-fsYpqK6VF3CyW1RYbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

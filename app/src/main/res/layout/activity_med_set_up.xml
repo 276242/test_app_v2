@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedSetUpActivity">
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/homeButton2"
+            app:layout_constraintStart_toEndOf="@+id/countdownButton2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/homeButton2"
+            android:layout_width="205dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/button_black"
+            android:fadingEdge="horizontal"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/countdownButton2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_home" />
+
+        <ImageButton
+            android:id="@+id/countdownButton2"
+            android:layout_width="206dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/button_black"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/homeButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_countdown" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="410dp"
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentNotifications"
+            android:layout_width="404dp"
+            android:layout_height="519dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginBottom="36dp"
+            android:focusableInTouchMode="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="407dp"
+            android:layout_height="103dp"
+            android:layout_marginBottom="586dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/banner" />
+
+
+        <TextView
+            android:id="@+id/textViewMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="111dp"
+            android:text="Medication Setup"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editMedicationName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <EditText
+            android:id="@+id/editMedicationName"
+            android:layout_width="253dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="78dp"
+            android:ems="10"
+            android:gravity="bottom|center_horizontal"
+            android:hint="Medication name"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/editDosage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMedication" />
+
+        <EditText
+            android:id="@+id/editDosage"
+            android:layout_width="160dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Dosage"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/editNotes"
+            app:layout_constraintEnd_toStartOf="@+id/unitSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMedicationName"
+            app:layout_constraintVertical_bias="0.825" />
+
+        <EditText
+            android:id="@+id/editNotes"
+            android:layout_width="259dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="fill|top|left"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:textAlignment="gravity"
+            app:layout_constraintBottom_toTopOf="@+id/setUpNotifButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/setUpNotifButton"
+            android:layout_width="264dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/button_black"
+            android:text="SET UP NOTIFICATIONS"
+            android:textSize="18sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/unitSpinner"
+            android:layout_width="92dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="300dp"
+            android:contextClickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editDosage"
+            app:layout_constraintTop_toBottomOf="@+id/editMedicationName"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
